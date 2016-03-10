@@ -1,0 +1,23 @@
+{
+  "name": "HealthBot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "healthbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goinvo/HealthBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goinvo/HealthBot/issues"
+  },
+  "homepage": "https://github.com/goinvo/HealthBot",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "slackbots": "^0.5.1"
+  }
+}
