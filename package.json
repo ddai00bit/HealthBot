@@ -1,7 +1,7 @@
 {
   "name": "HealthBot",
   "version": "0.0.0",
-  "description": "",
+  "description": "Slack bot for health.",
   "main": "healthbot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,8 @@
   "dependencies": {
     "dotenv": "^2.0.0",
     "slackbots": "^0.5.1"
+  },
+  "engines": {
+    "node": "4.4.0"
   }
 }
