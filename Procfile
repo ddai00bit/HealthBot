@@ -1,1 +1,1 @@
-web: node healthbot.js
+web: node healthbot.js -p $PORT
