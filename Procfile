@@ -1,1 +1,1 @@
-node healthbot.js
+web: node healthbot.js
