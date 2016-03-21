@@ -87,3 +87,5 @@ bot.on('message', function(data) {
     // 	stopMessage = false;
     // };
 });
+
+// Eeavesdropping on keywords (sick, tired, cough) = Feel better! Check in to your local minute clinic, only 7 minute wait.
