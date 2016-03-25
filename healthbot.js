@@ -17,7 +17,7 @@ bot.on('start', function() {
     };
     
     // define channel, where bot exist. You can adjust it there https://my.slack.com/services  
-    bot.postMessageToChannel('testbot', 'Howdy, check your local Minute Clinic wait time by texting me your zip code.', params);
+    bot.postMessageToChannel('testbot', 'Howdy, you can check the wait time at your local Minute Clinic by texting me your zip code.', params);
 });
 
 bot.on('message', function(data) {
