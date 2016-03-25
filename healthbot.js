@@ -34,12 +34,17 @@ bot.on('message', function(data) {
 	    "02461": "6505" // Newton
 	}];
 
-	console.log(clinics[0]["02138"]); 
-
     console.log(data);
     var stopMessage = true;
     var success = false;
 
+    // Listens or believes someone may be sick and others them a tip to get better.
+    if (data.text === "sick" && stopMessage) {
+        bot.postMessage(data.channel, 'Stay home and rest up <@' + data.user + '> ! \nDrinking lots of water will help. Try drinking eight 8-ounce glasses today.');
+        stopMessage = false;
+    };
+
+    // Request wait time at local minute clinic.
     if (data.text.substr(0, 12) === "<@U0Q4TCJCB>" && stopMessage) {
         console.log("Message has been sent to Health Bot");
 	    var currentChannel = data.channel;
@@ -75,17 +80,4 @@ bot.on('message', function(data) {
         stopMessage = false;
     };
 
-    // if (data.text === "<@U0Q4TCJCB>: hello" && stopMessage) {
-    //     console.log("It worked!");
-    //     console.log(currentChannel);
-    //     bot.postMessageToChannel('testbot', '18 minute wait time at ' + clinics[0]["02138"] + ': http://www.cvs.com/minuteclinic/clinic-locator/clinicdetails.jsp?storeId=' + clinics[0]["02138"]);
-    //     stopMessage = false;
-    // };
-
-    // if (data.text.indexOf("hello") && stopMessage) {
-    // 	console.log("yippee i know the user and trigger word");
-    // 	stopMessage = false;
-    // };
 });
-
-// Eeavesdropping on keywords (sick, tired, cough) = Feel better! Check in to your local minute clinic, only 7 minute wait.
