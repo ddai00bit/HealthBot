@@ -15,5 +15,6 @@
 ## Deploying
 Uses Heroku but is leveraging the Automatic Deploy from Github feature. Any commits to the Master branch will automatically go live.
 
-## Staging
-Bot is currently enabled for the #test channel in Slack.
+## Setup
+- Bot is currently enabled for the #test channel in Slack.
+- Bot name, description, and icon is editable within Slack's bot settings.
